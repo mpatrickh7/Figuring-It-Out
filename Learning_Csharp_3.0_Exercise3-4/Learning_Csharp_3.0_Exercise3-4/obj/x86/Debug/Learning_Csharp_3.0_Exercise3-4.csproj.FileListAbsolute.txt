@@ -1,0 +1,4 @@
+C:\Users\Michael\AppData\Local\Temporary Projects\Learning_Csharp_3.0_Exercise3-4\bin\Debug\Learning_Csharp_3.0_Exercise3-4.exe
+C:\Users\Michael\AppData\Local\Temporary Projects\Learning_Csharp_3.0_Exercise3-4\bin\Debug\Learning_Csharp_3.0_Exercise3-4.pdb
+C:\Users\Michael\AppData\Local\Temporary Projects\Learning_Csharp_3.0_Exercise3-4\obj\x86\Debug\Learning_Csharp_3.0_Exercise3-4.exe
+C:\Users\Michael\AppData\Local\Temporary Projects\Learning_Csharp_3.0_Exercise3-4\obj\x86\Debug\Learning_Csharp_3.0_Exercise3-4.pdb
