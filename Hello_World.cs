@@ -10,38 +10,45 @@ namespace Hello_World
 
         static void Main(string[] args)
         {
+
             Console.WriteLine("Input an integer");
             int x = Convert.ToInt32(Console.ReadLine());
 
-                if (x > 100)
-                {
-                    Console.WriteLine("Too HIGH!");
-                }
+            if (x <= 100)
+            {
 
-                    else if (x % 2 == 0)
+                if (x % 2 == 0)
+                {
+                    if (x == 0)
                     {
-                        Console.WriteLine("Even Steven");
+                        Console.WriteLine("Zero");
                     }
 
                     else
                     {
-                        Console.WriteLine("What an odd number");
-                    }
-
-                    if (x % 10 == 0 & x != 0)
-                    {
-                        Console.WriteLine("Multiple of 10");
-
-                        if (x == 0)
+                        if (x % 10 == 0)
                         {
-                            Console.WriteLine("ZERO");
-                        
-
-
+                            Console.WriteLine("Multiple of 10");
                         }
 
+                        else
+                        {
+                            Console.WriteLine("Even Steven");
+
+                        }
                     }
+
+                }
+                else
+                {
+                    Console.WriteLine("What an odd number");
                 }
             }
+            else
+            {
+                Console.WriteLine("TOO HIGH!");
+            }
         }
+    }
+}
 
