@@ -10,44 +10,38 @@ namespace Hello_World
 
         static void Main(string[] args)
         {
-        beginning:
-            Console.WriteLine("Enter a number");
-
+            Console.WriteLine("Input an integer");
             int x = Convert.ToInt32(Console.ReadLine());
 
-            if (x > 100)
-            {
-                Console.WriteLine("Your number is too high");
-                goto beginning;
-            }
-
-                if (x % 10 == 0 && x != 0)
+                if (x > 100)
                 {
-                    Console.WriteLine("Your number is a multiple of 10");
-                    goto beginning;
-                }
-                else if (x == 0)
-                {
-                    Console.WriteLine("You input zero");
-                    goto beginning;
+                    Console.WriteLine("Too HIGH!");
                 }
 
-                else if (x % 2 == 0)
-                {
-                    Console.WriteLine("Your number is even");
-                    goto beginning;
-                }
+                    else if (x % 2 == 0)
+                    {
+                        Console.WriteLine("Even Steven");
+                    }
 
-                else if (x % 2 == 1)
-                {
-                    Console.WriteLine("Your number is odd");
-                    goto beginning;
-                }
-                else
-                {
-                    Console.WriteLine("Try again. Input a number");
-                    goto beginning;
+                    else
+                    {
+                        Console.WriteLine("What an odd number");
+                    }
+
+                    if (x % 10 == 0 & x != 0)
+                    {
+                        Console.WriteLine("Multiple of 10");
+
+                        if (x == 0)
+                        {
+                            Console.WriteLine("ZERO");
+                        
+
+
+                        }
+
+                    }
                 }
             }
         }
-    }
+
