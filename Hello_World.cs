@@ -7,29 +7,21 @@ namespace Hello_World
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            int myInt = 42;
-            float daFloat = 98.6f;
-            double doubleTrouble = 12345.6789;
-            char zzzzz = 'Z';
-            string myString = "The quick brown fox jumped over the lazy dogs.\n";
-            Console.WriteLine(myInt);
-            Console.WriteLine(daFloat);
-            Console.WriteLine(doubleTrouble);
-            Console.WriteLine(zzzzz);
-            Console.WriteLine(myString);
+            int originalNumber = 22;
+            int result;
+            int nextNumber = 22;
+            int result2;
 
-            myInt = 25;
-            daFloat = 100.3f;
-            doubleTrouble = 98765.4321;
-            zzzzz = 'M';
-            myString = "A quick movement of the enemy will jeopardize six gun boats";
-            Console.WriteLine(myInt);
-            Console.WriteLine(daFloat);
-            Console.WriteLine(doubleTrouble);
-            Console.WriteLine(zzzzz);
-            Console.WriteLine(myString);
+            //int nextNumber = originalNumber++;
+
+            result = ++originalNumber; // This is taking 1, represented by '++,' and adding it to 22, represented by originalNumber. 1 + 22 = 23
+            result2 = nextNumber++; // result2 automatically equals the value of nextNumber which is 22. nextNumber is saying "I'm 22... now add 1 to me." Which is 23
+
+            Console.WriteLine("Prefix: ++originalNumber = {0}, result = {1}", originalNumber, result);
+            Console.WriteLine("Postfix: nextNumber++ = {0}, result2 = {1}", nextNumber, result2);
         }
     }
 }
