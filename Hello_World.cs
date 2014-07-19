@@ -7,30 +7,47 @@ namespace Hello_World
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-            int variable = 1;
+        beginning:
+            Console.WriteLine("Enter a number");
 
-            while (variable <= 10) 
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            if (x > 100)
             {
-                Console.WriteLine("counter: {0}", variable);
-                variable++;
+                Console.WriteLine("Your number is too high");
+                goto beginning;
             }
 
-            variable = 1;
+                if (x % 10 == 0 && x != 0)
+                {
+                    Console.WriteLine("Your number is a multiple of 10");
+                    goto beginning;
+                }
+                else if (x == 0)
+                {
+                    Console.WriteLine("You input zero");
+                    goto beginning;
+                }
 
-            do
-            {
-                Console.WriteLine("counter: {0}", variable);
-                variable++;
-            }
-            while (variable <= 10);
+                else if (x % 2 == 0)
+                {
+                    Console.WriteLine("Your number is even");
+                    goto beginning;
+                }
 
-            for (variable = 1; variable <= 10; variable++)
-            {
-                Console.WriteLine("counter: {0}", variable);
+                else if (x % 2 == 1)
+                {
+                    Console.WriteLine("Your number is odd");
+                    goto beginning;
+                }
+                else
+                {
+                    Console.WriteLine("Try again. Input a number");
+                    goto beginning;
+                }
             }
         }
     }
-}
