@@ -12,23 +12,23 @@ namespace Hello_World
         {
 
             Console.WriteLine("Input an integer");
-            int x = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine()); // This converts the string into an integer
 
             if (x <= 100)
             {
 
-                if (x % 2 == 0)
+                if (x % 2 == 0) // checks if the integer is even
                 {
-                    if (x == 0)
+                    if (x == 0) // checks if the integer is zero
                     {
-                        Console.WriteLine("Zero");
+                        Console.WriteLine("Zero"); // if the integer is 0 it will print out 'zero' to the console
                     }
 
                     else
                     {
-                        if (x % 10 == 0)
+                        if (x % 10 == 0) // checks if the integer is a multiple of 10
                         {
-                            Console.WriteLine("Multiple of 10");
+                            Console.WriteLine("Multiple of 10"); // if the integer is a multiple of 10 it will print 'Multiple of 10' to the console
                         }
 
                         else
